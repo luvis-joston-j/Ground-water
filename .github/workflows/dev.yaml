@@ -17,10 +17,10 @@ jobs:
       - name: Run Super-Linter
         uses: github/super-linter/slim@v6
         env:
-          DEFAULT_BRANCH: main
+          DEFAULT_BRANCH: dev
           GITHUB_TOKEN: ${{ secrets.TOKEN }}
           VALIDATE_ALL_CODEBASE: true
-          VALIDATE_JAVA: true
+          VALIDATE_R: true
 
   trivy:
     name: Docker Build and Trivy Scan
